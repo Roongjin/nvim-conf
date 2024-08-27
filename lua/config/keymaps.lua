@@ -3,3 +3,6 @@
 -- Add any additional keymaps here
 vim.keymap.set("i", "jj", "<Esc>", { silent = true })
 vim.keymap.set("n", "P", '"0p', { silent = true })
+
+-- <leader>wd absurdly disappeared from default keymap
+vim.keymap.set("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
